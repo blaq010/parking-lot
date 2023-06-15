@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\parkingLot-backend.props" />
+</Project>

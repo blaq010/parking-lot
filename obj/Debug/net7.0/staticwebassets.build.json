@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Mza4KjAuHGruS1sanidVtKjADcnRuGry7OHp9WnaOT8=",
+  "Source": "parkingLot-backend",
+  "BasePath": "_content/parkingLot-backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
