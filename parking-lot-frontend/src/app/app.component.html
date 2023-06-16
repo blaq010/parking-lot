@@ -1,0 +1,23 @@
+<h1>Parking Lots</h1>
+<ul>
+  <li *ngFor="let parkingLot of parkingLots">
+    <h2>{{ parkingLot.name }}</h2>
+    <p>Available spots: {{ parkingLot.availableSpots | json }}</p>
+    <p>Fee model: {{ parkingLot.feeModel | json }}</p>
+  </li>
+</ul>
+
+<h1>Calculate Fee</h1>
+<label for="vehicle-type">Vehicle Type:</label>
+<select id="vehicle-type" [(ngModel)]="vehicleType">
+  <option value="Motorcycles/scooters">Motorcycles/Scooters</option>
+  <option value="Cars/SUVs/Buses/Trucks">Cars/SUVs/Buses/Trucks</option>
+</select>
+<label for="duration">Duration (in minutes):</label>
+<input type="number" id="duration" [(ngModel)]="duration" />
+<button (click)="calculateFee()">Calculate Fee</button>
+
+<p *ngIf="fee !== null">Fee: {{ fee | currency }}</p>
+
+
+<router-outlet></router-outlet>
